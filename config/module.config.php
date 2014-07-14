@@ -27,6 +27,29 @@ return array(
         'account_editor_service' => 'kryuu_account_editor'
     ),
     
+    'KryuuAccount' => array(
+        'user_data_methods' => array(
+            'isActive' => array(
+                'service'   => 'KryuuAccountActivation\ActivateHandler',
+                'name'      => 'isActive',
+                'function'  => 'isActive',
+                'args'      => '',
+            ),
+            'isActive' => array(
+                'service'   => 'KryuuAccountActivation\ActivateHandler',
+                'name'      => 'timeLeft',
+                'function'  => 'timeLeft',
+                'args'      => '',
+            ),
+            'isActive' => array(
+                'service'   => 'KryuuAccountActivation\ActivateHandler',
+                'name'      => 'isTemporary',
+                'function'  => 'isTemporary',
+                'args'      => '',
+            ),
+        ),
+    ),
+    
     'controllers' => array(
         'invokables' => array(
             'KryuuAccountActivation'         => 'KryuuAccountActivation\Controller\ActivationController',
